@@ -1,330 +1,83 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Chosen Enigmas — Private Professional Command Center</title>
-
-  <meta
-    name="description"
-    content="Private Professional Command Center — a one-time purchase Notion template for organizing client records, session notes, finance tracking, and workflows."
-  />
+  <meta name="description" content="Private Professional Command Center — a one-time purchase Notion template for organizing client records, session notes, finance tracking, and workflows." />
 
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --line: #e2e8f0;
-      --card: #f8fafc;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 12px 0 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
-    nav a {
-      color: var(--muted);
-      margin-left: 14px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    .hero {
-      padding: 44px 0 24px;
-    }
-
-    .kicker {
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 12px 0;
-      font-size: 42px;
-      line-height: 1.1;
-    }
-
-    .sub {
-      margin: 0 0 18px;
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 760px;
-    }
-
-    .ctaRow {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      margin-top: 14px;
-    }
-
-    .btn {
-      padding: 12px 16px;
-      border-radius: 12px;
-      font-weight: 600;
-      border: 1px solid var(--line);
-      background: var(--text);
-      color: #ffffff;
-    }
-
-    .btn.secondary {
-      background: #ffffff;
-      color: var(--text);
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin: 28px 0 10px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    section {
-      padding: 28px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    h2 {
-      margin: 0 0 10px;
-      font-size: 22px;
-    }
-
-    ul {
-      margin: 10px 0 0 18px;
-      color: var(--muted);
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    .two {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 14px;
-    }
-
-    .pill {
-      display: inline-block;
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      background: #ffffff;
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin-right: 8px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 18px 0;
-      margin-top: 36px;
-      color: var(--muted);
-      font-size: 13px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    footer nav a {
-      margin-left: 12px;
-    }
-
-    @media (max-width: 800px) {
-      .grid { grid-template-columns: 1fr; }
-      .two { grid-template-columns: 1fr; }
-      h1 { font-size: 34px; }
-    }
+    :root { --bg:#ffffff; --text:#0f172a; --muted:#475569; --line:#e2e8f0; --card:#f8fafc; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:980px; margin:0 auto; padding:20px; }
+    header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); padding-bottom:14px; }
+    .brand { font-weight:700; }
+    nav a { margin-left:14px; color:var(--muted); font-size:14px; }
+    nav a:hover { color:var(--text); }
+    h1 { font-size:42px; margin:20px 0 10px; }
+    .sub { color:var(--muted); font-size:18px; max-width:720px; }
+    .btn { display:inline-block; padding:12px 16px; background:#0f172a; color:#fff; border-radius:10px; font-weight:600; margin-right:10px; }
+    .btn.secondary { background:#fff; color:#0f172a; border:1px solid var(--line); }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+    footer { border-top:1px solid var(--line); margin-top:40px; padding:18px 0; font-size:13px; color:var(--muted); text-align:center; }
+    @media(max-width:800px){ .grid{grid-template-columns:1fr;} h1{font-size:34px;} }
   </style>
+
 </head>
 
 <body>
   <div class="wrap">
 
-    <header>
-      <div class="brand">Chosen Enigmas</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#product">Product</a>
-        <a href="#pricing">Pricing</a>
-        <a href="terms.html">Terms</a>
-        <a href="refund-policy.html">Refund Policy</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+```
+<header>
+  <div class="brand">Chosen Enigmas</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="refund-policy.html">Refund Policy</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <div class="hero">
-      <div class="kicker">Digital Product • Notion Template</div>
+<h1>Private Professional Command Center</h1>
+<p class="sub">
+  A one-time purchase Notion template designed to help independent professionals
+  organize client records, session notes, finances, and workflows.
+</p>
 
-      <h1>Private Professional Command Center</h1>
+<p>
+  <a class="btn" href="contact.html">Purchase / Access</a>
+  <a class="btn secondary" href="refund-policy.html">View Refund Policy</a>
+</p>
 
-      <p class="sub">
-        A one-time purchase Notion template designed to help independent professionals
-        keep client records, session notes, finance tracking, and workflows organized
-        in one place.
-      </p>
+<div class="grid">
+  <div class="card">
+    <h3>Client Records</h3>
+    <p>Centralized client profiles and history.</p>
+  </div>
+  <div class="card">
+    <h3>Session Notes</h3>
+    <p>Clean, reusable documentation templates.</p>
+  </div>
+  <div class="card">
+    <h3>Finance Tracking</h3>
+    <p>Track payments, invoices, and totals.</p>
+  </div>
+</div>
 
-      <div class="ctaRow">
-        <a class="btn" href="contact.html">Purchase / Access</a>
-        <a class="btn secondary" href="#product">See what’s included</a>
-        <span class="note">Digital product only. No services. No subscriptions.</span>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Client Records</h3>
-          <p>Centralized client profiles with context, notes, and history.</p>
-        </div>
-        <div class="card">
-          <h3>Session Notes</h3>
-          <p>Reusable templates for consistent documentation and clarity.</p>
-        </div>
-        <div class="card">
-          <h3>Finance Tracking</h3>
-          <p>Simple payment and revenue tracking inside Notion.</p>
-        </div>
-      </div>
-    </div>
-
-    <section id="product">
-      <h2>What this is</h2>
-      <p class="sub">
-        This is a digital Notion template. After purchase, you duplicate it into your
-        own Notion workspace and customize it for your needs.
-      </p>
-
-      <div class="two">
-        <div class="card">
-          <h3>Included</h3>
-          <ul>
-            <li>Client management dashboard</li>
-            <li>Session note templates</li>
-            <li>Payment and revenue tracking</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Not included</h3>
-          <ul>
-            <li>Consulting or professional services</li>
-            <li>Income or performance guarantees</li>
-            <li>Notion subscription</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing">
-      <h2>Pricing</h2>
-      <p class="sub">One-time purchase. Digital delivery.</p>
-
-      <div class="card">
-        <div>
-          <span class="pill">One-time purchase</span>
-          <span class="pill">Digital delivery</span>
-          <span class="pill">Refund policy applies</span>
-        </div>
-
-        <p style="margin-top:12px;color:var(--muted);">
-          Price: <strong style="color:var(--text);">$97.00</strong><br />
-          Access instructions provided after purchase.
-        </p>
-
-        <p class="note" style="margin-top:10px;">
-          Review <a href="refund-policy.html">Refund Policy</a> and
-          <a href="terms.html">Terms</a> before purchasing.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Business information</h2>
-      <div class="card">
-        <p style="margin:0;color:var(--muted);line-height:1.5;">
-          Business name: Chosen Enigmas<br />
-          Product type: Digital Notion template<br />
-          Support: <a href="contact.html">Contact page</a><br />
-          Policies:
-          <a href="terms.html">Terms</a> •
-          <a href="refund-policy.html">Refund Policy</a>
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <div>
-        © <span id="year"></span> Chosen Enigmas. All rights reserved.
-      </div>
-      <nav>
-        <a href="terms.html">Terms</a>
-        <a href="refund-policy.html">Refund Policy</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </footer>
+<footer>
+  © <span id="y"></span> Chosen Enigmas. All rights reserved.
+</footer>
+```
 
   </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
