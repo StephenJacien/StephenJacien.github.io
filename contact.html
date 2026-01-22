@@ -1,60 +1,155 @@
-<nav>
-  <a href="/">Home</a>
-  <a href="/terms.html">Terms</a>
-  <a href="/refund-policy.html">Refund Policy</a>
-  <a href="/contact.html">Contact</a>
-</nav>
-<hr>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Chosen Enigmas</title>
+
   <style>
-    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color:#0f172a; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
-    header { border-bottom:1px solid #e2e8f0; padding-bottom: 14px; margin-bottom: 18px; }
-    a { color: inherit; }
-    h1 { margin: 0 0 6px; }
-    p, li { color:#475569; line-height:1.55; }
-    .card { border:1px solid #e2e8f0; border-radius: 14px; padding: 16px; background:#f8fafc; }
-    .label { font-size: 13px; color:#475569; margin-bottom: 6px; }
-    .value { font-size: 16px; }
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --card: #f8fafc;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0 18px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    header {
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 32px;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: var(--card);
+      margin-top: 14px;
+    }
+
+    .label {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .value {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 40px;
+      padding: 18px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    footer a {
+      color: inherit;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
+    <!-- Navigation -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/refund-policy.html">Refund Policy</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+
+    <!-- Header -->
     <header>
-      <div><a href="index.html">← Home</a></div>
       <h1>Contact</h1>
       <p>Product support and business inquiries.</p>
     </header>
 
+    <!-- Contact Card -->
     <div class="card">
       <div class="label">Support email</div>
       <div class="value">support@chosenenigmas.com</div>
       <p style="margin-top:12px;">
-        Include your purchase email and the date of purchase so we can help you quickly.
+        Please include your purchase email and the date of purchase so we can assist you as quickly as possible.
       </p>
     </div>
 
-    <p style="margin-top:16px;">
-      Policies: <a href="terms.html">Terms</a> • <a href="refund-policy.html">Refund Policy</a>
+    <!-- Policies -->
+    <p style="margin-top:18px;">
+      Policies:
+      <a href="/terms.html">Terms</a> •
+      <a href="/refund-policy.html">Refund Policy</a>
     </p>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © <span id="y"></span> Chosen Enigmas. All rights reserved.
+      </p>
+      <p>
+        <a href="/terms.html">Terms</a> |
+        <a href="/refund-policy.html">Refund Policy</a> |
+        <a href="/contact.html">Contact</a>
+      </p>
+    </footer>
+
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-<footer>
-  <p>
-© <span id="y"></span> Chosen Enigmas. All rights reserved.
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-  </p>
-  <p>
-    <a href="/terms.html">Terms</a> |
-    <a href="/refund-policy.html">Refund Policy</a> |
-    <a href="/contact.html">Contact</a>
-  </p>
-</footer>
