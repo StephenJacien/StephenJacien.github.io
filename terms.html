@@ -1,17 +1,3 @@
-```html
-<header>
-  <div class="brand">Chosen Enigmas</div>
-  <nav aria-label="Primary navigation">
-    <a href="index.html">Home</a>
-    <a href="index.html#product">Product</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="terms.html">Terms</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="refund-policy.html">Refund Policy</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Terms of Use — Chosen Enigmas</title>
-  <meta name="description" content="Terms of Use for Chosen Enigmas digital products, including purchase conditions, intellectual property rights, disclaimers, and limitations of liability." />
+  <meta name="description" content="Terms of Use for Chosen Enigmas digital products, including purchase conditions, intellectual property, disclaimers, and limitations of liability." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://stephenjacien.github.io/terms.html" />
@@ -37,44 +23,64 @@
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
       background:var(--bg);
       color:var(--text);
+      line-height:1.6;
     }
     a { color:inherit; }
     .wrap { max-width:860px;margin:0 auto;padding:24px; }
+
     header {
       display:flex;justify-content:space-between;align-items:center;
       padding:10px 0 18px;border-bottom:1px solid var(--line);
+      gap:16px;
     }
     .brand { font-weight:700;letter-spacing:.2px; }
     nav a { text-decoration:none;color:var(--muted);margin-left:14px;font-size:14px; }
     nav a:hover { color:var(--text); }
+
     h1 { font-size:32px;margin:26px 0 10px; }
-    h2 { font-size:20px;margin-top:28px; }
-    p { color:var(--muted);line-height:1.6;margin:10px 0;font-size:15px; }
+    .sub { color:var(--muted); margin:0 0 18px; max-width:720px; }
+    h2 { font-size:20px;margin-top:26px;margin-bottom:8px; }
+    p { color:var(--muted); margin:10px 0; font-size:15px; }
     ul { margin:10px 0 10px 18px;color:var(--muted); }
-    li { margin:6px 0;line-height:1.5; }
+    li { margin:6px 0; }
+
     .card {
       background:var(--card);
       border:1px solid var(--line);
       border-radius:14px;
       padding:18px;
-      margin-top:18px;
+      margin-top:14px;
     }
+
+    .meta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      font-size:13px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+    .pill {
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+    }
+
     footer {
       border-top:1px solid var(--line);
       padding:18px 0;
       margin-top:40px;
       font-size:13px;
       color:var(--muted);
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:space-between;
-      gap:10px;
     }
-    footer a { text-decoration:none;color:var(--muted);margin-left:10px; }
+    footer a { text-decoration:none;color:var(--muted); }
     footer a:hover { color:var(--text); }
+
     @media (max-width:720px) {
       header{flex-direction:column;align-items:flex-start;gap:10px;}
-      footer{flex-direction:column;align-items:flex-start;}
+      nav a { margin-left:0; margin-right:14px; }
     }
   </style>
 </head>
@@ -82,9 +88,10 @@
 <body>
   <div class="wrap">
 
+    <!-- Header -->
     <header>
       <div class="brand">Chosen Enigmas</div>
-      <nav>
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="terms.html">Terms</a>
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -93,48 +100,199 @@
       </nav>
     </header>
 
-    <h1>Terms of Use</h1>
+    <!-- Main -->
+    <main>
+      <h1>Terms of Use</h1>
+      <p class="sub">
+        These Terms of Use (“Terms”) govern your access to and use of Chosen Enigmas (“we,” “us,” “our”) and any
+        digital products sold through this site. By purchasing, downloading, or using our products, you agree to these Terms.
+      </p>
 
-    <!-- (content unchanged) -->
+      <div class="meta">
+        <span class="pill">Business: Chosen Enigmas</span>
+        <span class="pill">Product: Digital Notion template (one-time purchase)</span>
+        <span class="pill">Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a></span>
+      </div>
 
-<footer>
-  <nav aria-label="Footer navigation">
-    <a href="index.html">Home</a> ·
-    <a href="terms.html">Terms</a> ·
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="refund-policy.html">Refund Policy</a> ·
-    <a href="contact.html">Contact</a>
-  </nav>
+      <div class="card">
+        <h2>1) Eligibility & Acceptance</h2>
+        <p>
+          You must be able to form a legally binding contract to use this site and purchase our products.
+          If you do not agree to these Terms, do not use the site or purchase/download our products.
+        </p>
+      </div>
 
-  <p>
-    Business name: Chosen Enigmas<br>
-    Product type: Digital Notion template (one-time purchase)<br>
-    Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
-  </p>
+      <div class="card">
+        <h2>2) Digital Products & Delivery</h2>
+        <p>
+          Chosen Enigmas sells digital products only (e.g., Notion templates). After purchase, access details and delivery
+          instructions are typically provided via the email you used at checkout. It is your responsibility to provide a valid
+          email address and to check spam/junk folders.
+        </p>
+        <p>
+          Because these are digital goods, delivery may be considered complete once access is provided or the product is made available to you.
+        </p>
+      </div>
 
-  <p>© <span id="y"></span> Chosen Enigmas. All rights reserved.</p>
+      <div class="card">
+        <h2>3) License & Permitted Use</h2>
+        <p>
+          Unless otherwise stated, your purchase grants you a limited, non-exclusive, non-transferable license to use the product
+          for your personal use (or internal business use if you purchased for your organization).
+        </p>
+        <ul>
+          <li>You may modify the template for your own use.</li>
+          <li>You may not resell, redistribute, sublicense, share, or publicly post the template or any substantial portion of it.</li>
+          <li>You may not claim the product as your own or remove proprietary notices.</li>
+        </ul>
+      </div>
 
-  <p style="font-size:12px;max-width:720px;">
-    Chosen Enigmas provides digital products only. No consulting, coaching,
-    therapy, or professional services are offered. No guarantees are made
-    regarding outcomes, income, or results. Use of this site constitutes
-    acceptance of the Terms, Privacy Policy, and Refund Policy.
-  </p>
+      <div class="card">
+        <h2>4) Prohibited Conduct</h2>
+        <ul>
+          <li>Attempting to copy, scrape, reverse engineer, or distribute our products or site content without permission.</li>
+          <li>Using the site for unlawful, harmful, or fraudulent activities.</li>
+          <li>Interfering with site security or access (including automated abuse, excessive requests, or malicious behavior).</li>
+        </ul>
+      </div>
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Chosen Enigmas",
-    "url":"https://stephenjacien.github.io/",
-    "email":"support@chosenenigmas.com"
-  }
+      <div class="card">
+        <h2>5) Pricing, Payments & Taxes</h2>
+        <p>
+          Prices are listed at the point of sale and may change at any time. You are responsible for any applicable taxes,
+          currency conversion fees, or bank/processor charges.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>6) Refund Policy</h2>
+        <p>
+          Refund eligibility is governed strictly by our <a href="refund-policy.html">Refund Policy</a>.
+          By purchasing, you acknowledge you have read and agree to the Refund Policy terms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>7) Intellectual Property</h2>
+        <p>
+          All site content and digital products (including layouts, text, branding, and design) are owned by Chosen Enigmas
+          or licensed to us and are protected by applicable intellectual property laws. No rights are granted except as explicitly stated in these Terms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>8) No Professional Advice</h2>
+        <p>
+          Our products are provided for informational and organizational purposes only. We do not provide legal, financial,
+          medical, therapeutic, or other professional services. You are responsible for how you use the product and for any decisions you make.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>9) Disclaimers</h2>
+        <p>
+          THE SITE AND PRODUCTS ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+          INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+        </p>
+        <p>
+          We do not warrant that the product will meet your requirements, be error-free, or that use of the product will achieve any particular result.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>10) Limitation of Liability</h2>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, CHOSEN ENIGMAS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+          CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING FROM OR RELATED TO
+          YOUR USE OF THE SITE OR PRODUCTS.
+        </p>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THE PRODUCTS
+          OR THESE TERMS SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE PRODUCT GIVING RISE TO THE CLAIM.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>11) Indemnification</h2>
+        <p>
+          You agree to indemnify and hold harmless Chosen Enigmas from any claims, damages, liabilities, losses, and expenses
+          (including reasonable attorneys’ fees) arising from your misuse of the site/products or violation of these Terms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>12) Termination</h2>
+        <p>
+          We may suspend or terminate access to the site or products if we reasonably believe you have violated these Terms.
+          The license granted to you terminates automatically upon breach.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>13) Changes to These Terms</h2>
+        <p>
+          We may update these Terms from time to time. The “last updated” date (if shown) indicates the most recent revision.
+          Continued use of the site after changes become effective constitutes acceptance of the updated Terms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>14) Privacy</h2>
+        <p>
+          Our data practices are described in our <a href="privacy-policy.html">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>15) Contact</h2>
+        <p>
+          For support, questions, or legal inquiries, contact:
+          <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <nav aria-label="Footer navigation" style="margin-bottom:12px;">
+        <a href="index.html">Home</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="refund-policy.html">Refund Policy</a> ·
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <p style="margin:0;">
+        Business name: Chosen Enigmas<br>
+        Product type: Digital Notion template (one-time purchase)<br>
+        Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
+      </p>
+
+      <p style="margin-top:10px;">
+        © <span id="y"></span> Chosen Enigmas. All rights reserved.
+      </p>
+
+      <p style="font-size:12px;color:#475569;max-width:720px;margin:0;">
+        Chosen Enigmas provides digital products only. No consulting, coaching, therapy, or professional services are offered.
+        No guarantees are made regarding outcomes, income, or results. Use of this site constitutes acceptance of the Terms,
+        Privacy Policy, and Refund Policy.
+      </p>
+
+      <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"Chosen Enigmas",
+        "url":"https://stephenjacien.github.io/",
+        "email":"support@chosenenigmas.com"
+      }
+      </script>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-</footer>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
-```
