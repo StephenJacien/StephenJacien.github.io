@@ -229,21 +229,48 @@
       </p>
     </div>
 
-    <footer>
-      <div>
-        © <span id="y"></span> Chosen Enigmas. All rights reserved.
-      </div>
-      <div>
-        <a href="terms.html">Terms</a>
-        <a href="refund-policy.html">Refund Policy</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </footer>
+<footer>
+  <!-- Footer navigation -->
+  <nav style="margin-bottom:12px;" aria-label="Footer navigation">
+    <a href="index.html">Home</a> ·
+    <a href="terms.html">Terms</a> ·
+    <a href="refund-policy.html">Refund Policy</a> ·
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  </div>
+  <!-- Business identity -->
+  <p style="margin:0;">
+    Business name: Chosen Enigmas<br>
+    Product type: Digital Notion template (one-time purchase)<br>
+    Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
+  </p>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+  <!-- Copyright -->
+  <p style="margin-top:10px;">
+    © <span id="y"></span> Chosen Enigmas. All rights reserved.
+  </p>
+
+  <!-- Legal microcopy -->
+  <p style="font-size:12px;color:#475569;max-width:720px;">
+    Chosen Enigmas provides digital products only. No consulting, coaching,
+    therapy, or professional services are offered. No guarantees are made
+    regarding outcomes, income, or results. Use of this site constitutes
+    acceptance of the Terms and Refund Policy.
+  </p>
+
+  <!-- Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Chosen Enigmas",
+    "url": "https://stephenjacien.github.io/",
+    "email": "support@chosenenigmas.com"
+  }
   </script>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
-</html>
