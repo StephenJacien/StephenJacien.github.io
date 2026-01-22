@@ -1,57 +1,215 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Chosen Enigmas</title>
+
+  <title>Contact & Support — Chosen Enigmas</title>
+
+  <meta name="description" content="Contact Chosen Enigmas for product support, access questions, or business inquiries related to our digital Notion templates." />
 
   <style>
-    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; color:#0f172a; }
-    .wrap { max-width:820px; margin:0 auto; padding:20px; }
-    header, footer { border-bottom:1px solid #e2e8f0; padding-bottom:12px; margin-bottom:20px; }
-    footer { border-top:1px solid #e2e8f0; margin-top:40px; font-size:13px; color:#475569; text-align:center; }
-    nav a { margin-right:14px; color:#475569; text-decoration:none; font-size:14px; }
-    nav a:hover { color:#0f172a; }
-    h1 { margin-top:0; }
-  </style>
+    :root {
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --card:#f8fafc;
+      --accent:#0f172a;
+    }
 
+    body {
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a { color:inherit; }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 10px 0 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    nav a {
+      text-decoration:none;
+      color:var(--muted);
+      margin-left: 14px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 28px 0 10px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 680px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 22px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .email-box {
+      font-size: 16px;
+      font-weight: 600;
+      background:#fff;
+      border:1px solid var(--line);
+      padding: 14px 16px;
+      border-radius: 12px;
+      display:inline-block;
+      margin: 10px 0 6px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top:1px solid var(--line);
+      margin-top: 40px;
+      padding: 22px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer nav {
+      margin-top: 8px;
+    }
+
+    footer nav a {
+      margin-right: 12px;
+      text-decoration:none;
+      color: var(--muted);
+    }
+
+    footer nav a:hover {
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 28px; }
+    }
+  </style>
 </head>
 
 <body>
   <div class="wrap">
 
-```
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="terms.html">Terms</a>
-    <a href="refund-policy.html">Refund Policy</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <!-- Header -->
+    <header>
+      <div class="brand">Chosen Enigmas</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<h1>Contact</h1>
+    <!-- Main -->
+    <main>
+      <h1>Contact & Support</h1>
+      <p class="sub">
+        This page is for product support, access questions, and legitimate business inquiries
+        related to Chosen Enigmas digital products.
+      </p>
 
-<p>Product support and business inquiries.</p>
+      <div class="card">
+        <h2>Product Support</h2>
+        <p>
+          If you’ve purchased a Chosen Enigmas digital product and need assistance
+          with access, delivery, or general usage questions, please contact us by email.
+        </p>
 
-<p>
-  <strong>Email:</strong><br />
-  support@chosenenigmas.com
-</p>
+        <div class="email-box">
+          support@chosenenigmas.com
+        </div>
 
-<p>Please include your purchase email and date of purchase.</p>
+        <p class="note">
+          To help us respond efficiently, please include:
+          <br />• The email address used at checkout
+          <br />• Date of purchase
+          <br />• A brief description of the issue
+        </p>
+      </div>
 
-<footer>
-  © <span id="y"></span> Chosen Enigmas. All rights reserved.
-</footer>
-```
+      <div class="card">
+        <h2>Business & Legal Inquiries</h2>
+        <p>
+          For business matters, compliance questions, or policy-related concerns,
+          you may use the same support email. Please clearly indicate the nature
+          of your inquiry in the subject line.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Important Notes</h2>
+        <p class="note">
+          Chosen Enigmas sells digital products only. We do not offer coaching,
+          consulting, therapy, or personalized services.
+        </p>
+        <p class="note">
+          Refunds, eligibility, and limitations are governed strictly by our
+          <a href="refund-policy.html">Refund Policy</a> and
+          <a href="terms.html">Terms & Conditions</a>.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © <span id="y"></span> Chosen Enigmas. All rights reserved.
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
 
   </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
