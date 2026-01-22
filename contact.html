@@ -1,14 +1,3 @@
-<header>
-  <div class="brand">Chosen Enigmas</div>
-  <nav aria-label="Primary navigation">
-    <a href="index.html">Home</a>
-    <a href="index.html#product">Product</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="terms.html">Terms</a>
-    <a href="refund-policy.html">Refund Policy</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
 <!doctype html>
 <html lang="en">
 <head>
@@ -148,8 +137,10 @@
     <!-- Header -->
     <header>
       <div class="brand">Chosen Enigmas</div>
-      <nav>
+      <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
+        <a href="index.html#product">Product</a>
+        <a href="index.html#pricing">Pricing</a>
         <a href="terms.html">Terms</a>
         <a href="refund-policy.html">Refund Policy</a>
         <a href="contact.html">Contact</a>
@@ -171,9 +162,7 @@
           with access, delivery, or general usage questions, please contact us by email.
         </p>
 
-        <div class="email-box">
-          support@chosenenigmas.com
-        </div>
+        <div class="email-box">support@chosenenigmas.com</div>
 
         <p class="note">
           To help us respond efficiently, please include:
@@ -207,48 +196,46 @@
     </main>
 
     <!-- Footer -->
-<footer>
-  <!-- Footer navigation -->
-  <nav style="margin-bottom:12px;" aria-label="Footer navigation">
-    <a href="index.html">Home</a> ·
-    <a href="terms.html">Terms</a> ·
-    <a href="refund-policy.html">Refund Policy</a> ·
-    <a href="contact.html">Contact</a>
-  </nav>
+    <footer>
+      <nav style="margin-bottom:12px;" aria-label="Footer navigation">
+        <a href="index.html">Home</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="refund-policy.html">Refund Policy</a> ·
+        <a href="contact.html">Contact</a>
+      </nav>
 
-  <!-- Business identity -->
-  <p style="margin:0;">
-    Business name: Chosen Enigmas<br>
-    Product type: Digital Notion template (one-time purchase)<br>
-    Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
-  </p>
+      <p style="margin:0;">
+        Business name: Chosen Enigmas<br>
+        Product type: Digital Notion template (one-time purchase)<br>
+        Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
+      </p>
 
-  <!-- Copyright -->
-  <p style="margin-top:10px;">
-    © <span id="y"></span> Chosen Enigmas. All rights reserved.
-  </p>
+      <p style="margin-top:10px;">
+        © <span id="y"></span> Chosen Enigmas. All rights reserved.
+      </p>
 
-  <!-- Legal microcopy -->
-  <p style="font-size:12px;color:#475569;max-width:720px;">
-    Chosen Enigmas provides digital products only. No consulting, coaching,
-    therapy, or professional services are offered. No guarantees are made
-    regarding outcomes, income, or results. Use of this site constitutes
-    acceptance of the Terms and Refund Policy.
-  </p>
+      <p style="font-size:12px;color:#475569;max-width:720px;">
+        Chosen Enigmas provides digital products only. No consulting, coaching,
+        therapy, or professional services are offered. No guarantees are made
+        regarding outcomes, income, or results. Use of this site constitutes
+        acceptance of the Terms and Refund Policy.
+      </p>
 
-  <!-- Organization schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Chosen Enigmas",
-    "url": "https://stephenjacien.github.io/",
-    "email": "support@chosenenigmas.com"
-  }
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Chosen Enigmas",
+        "url": "https://stephenjacien.github.io/",
+        "email": "support@chosenenigmas.com"
+      }
+      </script>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
-</footer>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 </body>
+</html>
