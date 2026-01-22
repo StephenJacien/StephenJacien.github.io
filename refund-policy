@@ -22,38 +22,39 @@
     </header>
 
     <p>
-      This is a digital product. Once access or delivery instructions have been provided, refunds are limited because the product
-      can be duplicated immediately.
+      Chosen Enigmas sells digital products delivered electronically. Because digital products can be accessed
+      immediately and duplicated, refunds are limited.
     </p>
 
-    <h2>Refund eligibility</h2>
+    <h2>Eligible refunds</h2>
     <ul>
       <li>
-        If you are unable to access the product due to a verified technical issue on our side, we will attempt to fix it.
-        If we cannot resolve access within a reasonable timeframe, we will provide a refund.
+        If you experience a verified technical issue that prevents access to the digital product
+        and we are unable to resolve it within a reasonable timeframe.
       </li>
       <li>
-        Refund requests must be submitted within 7 days of purchase.
+        Refund requests must be submitted within <strong>7 calendar days</strong> of purchase.
       </li>
     </ul>
 
     <h2>Non-refundable situations</h2>
     <ul>
-      <li>Change of mind after access/delivery has been provided</li>
-      <li>Incompatibility with your Notion plan, device, or third-party platform changes</li>
-      <li>Failure to use the product as intended</li>
+      <li>Change of mind after access or delivery has been provided</li>
+      <li>Failure to read the product description before purchasing</li>
+      <li>Incompatibility with third-party platforms, accounts, or software</li>
+      <li>Lack of use or dissatisfaction with subjective outcomes</li>
     </ul>
 
     <h2>How to request a refund</h2>
     <p>
-      Submit your request through the <a href="contact.html">Contact</a> page with:
-      (1) purchase email, (2) purchase date, (3) reason for request, and (4) any relevant screenshots if access is failing.
+      Contact us via the <a href="contact.html">Contact</a> page and include:
+      (1) purchase email, (2) purchase date, and (3) a description of the access issue.
     </p>
 
     <h2>Chargebacks</h2>
     <p>
-      If you have an issue, contact us first so we can resolve it quickly. Unresolved chargebacks may result in loss of access
-      to the product.
+      Customers agree to contact us before filing a chargeback.
+      Unresolved chargebacks may result in permanent loss of access to the digital product.
     </p>
   </div>
 </body>
