@@ -92,6 +92,11 @@ a:hover {
   padding-inline: var(--container-padding);
 }
 
+main > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /* ============================================
    Header
    ============================================ */
@@ -184,6 +189,21 @@ a:hover {
   color: var(--color-text-400);
   margin: var(--space-5) 0 0;
   max-width: 620px;
+}
+
+.purchase-details {
+  margin-top: var(--space-6);
+  max-width: 620px;
+}
+
+.purchase-details p {
+  margin: 0 0 var(--space-3);
+  font-size: 15px;
+  color: var(--color-text-300);
+}
+
+.purchase-details p:last-child {
+  margin-bottom: 0;
 }
 
 /* ============================================
@@ -566,8 +586,8 @@ a:hover {
    Footer
    ============================================ */
 .site-footer {
-  margin-top: var(--space-12);
-  padding-block: var(--space-10);
+  margin-top: var(--space-7);
+  padding-block: var(--space-7);
 }
 
 .footer-inner {
@@ -674,7 +694,8 @@ a:hover {
   }
 
   .site-footer {
-    margin-top: var(--space-10);
+    margin-top: var(--space-6);
+    padding-block: var(--space-6);
   }
 }
 
