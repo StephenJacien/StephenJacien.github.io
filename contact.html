@@ -8,136 +8,14 @@
 
   <meta name="description" content="Contact Chosen Enigmas for product support, access questions, or business inquiries related to our digital Notion templates." />
 
-  <style>
-    :root {
-      --bg:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --line:#e2e8f0;
-      --card:#f8fafc;
-      --accent:#0f172a;
-    }
-
-    body {
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-
-    a { color:inherit; }
-
-    .wrap {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding: 10px 0 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: .2px;
-    }
-
-    nav a {
-      text-decoration:none;
-      color:var(--muted);
-      margin-left: 14px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    h1 {
-      font-size: 34px;
-      margin: 28px 0 10px;
-    }
-
-    .sub {
-      color: var(--muted);
-      font-size: 17px;
-      max-width: 680px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 22px;
-    }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: 20px;
-    }
-
-    p {
-      margin: 0 0 12px;
-    }
-
-    .email-box {
-      font-size: 16px;
-      font-weight: 600;
-      background:#fff;
-      border:1px solid var(--line);
-      padding: 14px 16px;
-      border-radius: 12px;
-      display:inline-block;
-      margin: 10px 0 6px;
-    }
-
-    .note {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    footer {
-      border-top:1px solid var(--line);
-      margin-top: 40px;
-      padding: 22px 0;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    footer nav {
-      margin-top: 8px;
-    }
-
-    footer nav a {
-      margin-right: 12px;
-      text-decoration:none;
-      color: var(--muted);
-    }
-
-    footer nav a:hover {
-      color: var(--text);
-    }
-
-    @media (max-width: 700px) {
-      h1 { font-size: 28px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="wrap">
-
-    <!-- Header -->
-    <header>
-      <div class="brand">Chosen Enigmas</div>
-      <nav aria-label="Primary navigation">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Chosen Enigmas</a>
+      <nav class="nav-primary" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="index.html#product">Product</a>
         <a href="index.html#pricing">Pricing</a>
@@ -146,17 +24,20 @@
         <a href="refund-policy.html">Refund Policy</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Main -->
-    <main>
-      <h1>Contact & Support</h1>
-      <p class="sub">
-        For questions related to digital product access, delivery issues, or policy inquiries, please contact:
-      </p>
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>Contact & Support</h1>
+        <p class="page-intro">
+          For questions related to digital product access, delivery issues, or policy inquiries, please contact:
+        </p>
+      </div>
 
-      <div class="card">
-        <p><strong>Email:</strong> <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a></p>
+      <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:support@chosenenigmas.com" class="email-highlight">support@chosenenigmas.com</a></p>
         <p>
           Chosen Enigmas provides digital products only. Support is limited to access issues, delivery confirmation, and policy-related questions. We do not offer consulting, coaching, or implementation services.
         </p>
@@ -164,32 +45,33 @@
           Messages are reviewed in the order received. Please allow reasonable time for a response.
         </p>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer style="border-top:1px solid #e2e8f0;margin-top:40px;padding:24px 0;text-align:center;color:#475569;font-size:16px;">
-  <nav aria-label="Footer navigation" style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:16px;">
-    <a href="/index.html" style="text-decoration:none;color:inherit;font-size:16px;">Home</a>
-    <a href="/terms.html" style="text-decoration:none;color:inherit;font-size:16px;">Terms</a>
-    <a href="/privacy-policy.html" style="text-decoration:none;color:inherit;font-size:16px;">Privacy Policy</a>
-    <a href="/refund-policy.html" style="text-decoration:none;color:inherit;font-size:16px;">Refund Policy</a>
-    <a href="/contact.html" style="text-decoration:none;color:inherit;font-size:16px;">Contact</a>
-  </nav>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-  <p style="margin:0 0 12px;line-height:1.5;">
-    Business name: Chosen Enigmas<br>
-    Product type: Digital Notion template (one-time purchase)<br>
-    Support: <a href="mailto:support@chosenenigmas.com" style="color:inherit;text-decoration:none;font-size:16px;">support@chosenenigmas.com</a>
-  </p>
+      <p class="footer-meta">
+        Business name: Chosen Enigmas<br>
+        Product type: Digital Notion template (one-time purchase)<br>
+        Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
+      </p>
 
-  <p style="margin:0 0 12px;">
-    © 2026 Chosen Enigmas. All rights reserved.
-  </p>
+      <p class="footer-copyright">
+        © 2026 Chosen Enigmas. All rights reserved.
+      </p>
 
-  <p style="margin:0;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.5;">
-    Chosen Enigmas provides digital products only. No consulting, coaching, therapy, or professional services are offered. No guarantees are made regarding outcomes, income, or results.
-  </p>
-</footer>
-
-  </div>
+      <p class="footer-disclaimer">
+        Chosen Enigmas provides digital products only. No consulting, coaching, therapy, or professional services are offered. No guarantees are made regarding outcomes, income, or results.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

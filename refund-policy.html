@@ -7,236 +7,118 @@
 
   <meta name="description" content="Refund Policy for Chosen Enigmas digital products, including eligibility, exclusions, and how to request a refund." />
 
-  <style>
-    :root {
-      --bg:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --line:#e2e8f0;
-      --card:#f8fafc;
-      --accent:#0f172a;
-    }
-
-    body {
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-
-    a { color:var(--accent); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-
-    .wrap {
-      max-width:860px;
-      margin:0 auto;
-      padding:24px;
-    }
-
-    header {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding-bottom:18px;
-      border-bottom:1px solid var(--line);
-      margin-bottom:28px;
-    }
-
-    .brand {
-      font-weight:700;
-      letter-spacing:.2px;
-      font-size:18px;
-    }
-
-    nav a {
-      margin-left:16px;
-      font-size:14px;
-      color:var(--muted);
-    }
-
-    nav a:hover { color:var(--text); }
-
-    h1 {
-      font-size:34px;
-      margin:0 0 8px;
-      line-height:1.2;
-    }
-
-    .sub {
-      color:var(--muted);
-      font-size:16px;
-      margin-bottom:28px;
-      max-width:760px;
-    }
-
-    section {
-      margin-bottom:32px;
-    }
-
-    h2 {
-      font-size:20px;
-      margin:0 0 10px;
-    }
-
-    .card {
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:18px;
-    }
-
-    ul {
-      margin:10px 0 0 18px;
-      color:var(--muted);
-    }
-
-    li {
-      margin:8px 0;
-    }
-
-    footer {
-      border-top:1px solid var(--line);
-      margin-top:40px;
-      padding-top:18px;
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    footer nav {
-      margin-top:8px;
-    }
-
-    footer nav a {
-      margin-right:12px;
-      color:var(--muted);
-    }
-
-    @media (max-width:700px) {
-      h1 { font-size:28px; }
-      header { flex-direction:column; align-items:flex-start; gap:10px; }
-      nav a { margin-left:0; margin-right:12px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="wrap">
-
-    <header>
-      <div class="brand">Chosen Enigmas</div>
-      <nav aria-label="Primary navigation">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Chosen Enigmas</a>
+      <nav class="nav-primary" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="terms.html">Terms</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="refund-policy.html">Refund Policy</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <h1>Refund Policy</h1>
-      <p class="sub">
-        This Refund Policy explains when refunds are available for digital products
-        sold by Chosen Enigmas and how to request one.
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>Refund Policy</h1>
+        <p class="page-intro">
+          This Refund Policy explains when refunds are available for digital products
+          sold by Chosen Enigmas and how to request one.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>1. Overview</h2>
+        <p>
+          Chosen Enigmas sells digital products delivered electronically. Due to the nature of digital goods, all sales are considered final once delivery has occurred, except as required by law.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. Eligibility</h2>
+        <p>
+          Refunds may be considered only if the digital product was not delivered as described or access instructions were not provided. Requests must be submitted within 7 days of purchase.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Non-Eligible Cases</h2>
+        <p>
+          Refunds will not be issued for:
+        </p>
+        <ul>
+          <li>Change of mind after purchase</li>
+          <li>Lack of usage or implementation</li>
+          <li>Dissatisfaction with results or outcomes</li>
+          <li>Failure to use or understand the template</li>
+          <li>Compatibility issues related to third-party platforms such as Notion</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>4. Request Process</h2>
+        <p>
+          To request a refund, contact support@chosenenigmas.com with your purchase details. Approved refunds will be processed to the original payment method.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>5. Processing Time</h2>
+        <p>
+          Approved refunds are typically processed within <strong>5–10 business days</strong>,
+          depending on your payment provider. Once processed, funds will be returned
+          to the original payment method used at checkout.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>6. Policy Updates</h2>
+        <p>
+          Chosen Enigmas reserves the right to update or modify this Refund Policy at any time.
+          Changes will take effect immediately upon publication on this page.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>7. Finality</h2>
+        <p>
+          By completing a purchase, customers acknowledge that they are purchasing a digital product and agree to this refund policy.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <p class="footer-meta">
+        Business name: Chosen Enigmas<br>
+        Product type: Digital Notion template (one-time purchase)<br>
+        Support: <a href="mailto:support@chosenenigmas.com">support@chosenenigmas.com</a>
       </p>
 
-      <section>
-        <h2>1. Overview</h2>
-        <div class="card">
-          <p>
-            Chosen Enigmas sells digital products delivered electronically. Due to the nature of digital goods, all sales are considered final once delivery has occurred, except as required by law.
-          </p>
-        </div>
-      </section>
+      <p class="footer-copyright">
+        © 2026 Chosen Enigmas. All rights reserved.
+      </p>
 
-      <section>
-        <h2>2. Eligibility</h2>
-        <div class="card">
-          <p>
-            Refunds may be considered only if the digital product was not delivered as described or access instructions were not provided. Requests must be submitted within 7 days of purchase.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h2>3. Non-Eligible Cases</h2>
-        <div class="card">
-          <p>
-            Refunds will not be issued for:
-          </p>
-          <ul>
-            <li>Change of mind after purchase</li>
-            <li>Lack of usage or implementation</li>
-            <li>Dissatisfaction with results or outcomes</li>
-            <li>Failure to use or understand the template</li>
-            <li>Compatibility issues related to third-party platforms such as Notion</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2>4. Request Process</h2>
-        <div class="card">
-          <p>
-            To request a refund, contact support@chosenenigmas.com with your purchase details. Approved refunds will be processed to the original payment method.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h2>5. Processing Time</h2>
-        <div class="card">
-          <p>
-            Approved refunds are typically processed within <strong>5–10 business days</strong>,
-            depending on your payment provider. Once processed, funds will be returned
-            to the original payment method used at checkout.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h2>6. Policy Updates</h2>
-        <div class="card">
-          <p>
-            Chosen Enigmas reserves the right to update or modify this Refund Policy at any time.
-            Changes will take effect immediately upon publication on this page.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h2>7. Finality</h2>
-        <div class="card">
-          <p>
-            By completing a purchase, customers acknowledge that they are purchasing a digital product and agree to this refund policy.
-          </p>
-        </div>
-      </section>
-    </main>
-
-<footer style="border-top:1px solid #e2e8f0;margin-top:40px;padding:24px 0;text-align:center;color:#475569;font-size:16px;">
-  <nav aria-label="Footer navigation" style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:16px;">
-    <a href="/index.html" style="text-decoration:none;color:inherit;font-size:16px;">Home</a>
-    <a href="/terms.html" style="text-decoration:none;color:inherit;font-size:16px;">Terms</a>
-    <a href="/privacy-policy.html" style="text-decoration:none;color:inherit;font-size:16px;">Privacy Policy</a>
-    <a href="/refund-policy.html" style="text-decoration:none;color:inherit;font-size:16px;">Refund Policy</a>
-    <a href="/contact.html" style="text-decoration:none;color:inherit;font-size:16px;">Contact</a>
-  </nav>
-
-  <p style="margin:0 0 12px;line-height:1.5;">
-    Business name: Chosen Enigmas<br>
-    Product type: Digital Notion template (one-time purchase)<br>
-    Support: <a href="mailto:support@chosenenigmas.com" style="color:inherit;text-decoration:none;font-size:16px;">support@chosenenigmas.com</a>
-  </p>
-
-  <p style="margin:0 0 12px;">
-    © 2026 Chosen Enigmas. All rights reserved.
-  </p>
-
-  <p style="margin:0;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.5;">
-    Chosen Enigmas provides digital products only. No consulting, coaching, therapy, or professional services are offered. No guarantees are made regarding outcomes, income, or results.
-  </p>
-</footer>
+      <p class="footer-disclaimer">
+        Chosen Enigmas provides digital products only. No consulting, coaching, therapy, or professional services are offered. No guarantees are made regarding outcomes, income, or results.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
