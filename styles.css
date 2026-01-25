@@ -179,6 +179,13 @@ a:hover {
   margin: 0;
 }
 
+.delivery-note {
+  font-size: 15px;
+  color: var(--color-text-400);
+  margin: var(--space-5) 0 0;
+  max-width: 620px;
+}
+
 /* ============================================
    CTA Buttons
    ============================================ */
@@ -313,6 +320,33 @@ a:hover {
   margin-top: var(--space-8);
 }
 
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+}
+
+.faq-item {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 var(--space-3);
+  color: var(--color-text-100);
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-300);
+  margin: 0;
+}
+
 /* ============================================
    Policy / Content Pages
    ============================================ */
@@ -335,6 +369,12 @@ a:hover {
   color: var(--color-text-300);
   max-width: 640px;
   margin: 0;
+}
+
+.page-updated {
+  font-size: 14px;
+  color: var(--color-text-400);
+  margin: var(--space-4) 0 0;
 }
 
 .content-section {
@@ -434,6 +474,33 @@ a:hover {
 /* ============================================
    Pricing Section
    ============================================ */
+.access-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  max-width: 520px;
+}
+
+.access-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-100);
+}
+
+.access-card ul {
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-text-300);
+}
+
+.access-card li {
+  margin: var(--space-3) 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 .pricing-card {
   background-color: var(--color-surface);
   border-radius: var(--radius-xl);
